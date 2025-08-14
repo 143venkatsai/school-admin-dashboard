@@ -24,6 +24,36 @@ A responsive React-based dashboard layout with a collapsible sidebar, built usin
 
 ---
 
+## 🚀 Features
+
+- **Sidebar Navigation**
+
+  - Collapsible on mobile devices
+  - Always visible on desktop
+
+- **Dashboard Analytics**
+
+  - **Stats Cards** — Total Students, Total Classes, Avg. Performance, Top Performer
+  - **Bar Chart** — Class-wise student enrollment
+  - **Pie Chart** — Student performance distribution
+
+- **Leaderboard**
+
+  - Displays top 10 performers with avatars, points, streaks, and achievements
+  - Winner badges for **Top Scorer**, **Longest Streak**, **Most Lessons Completed**
+
+- **Student Directory**
+
+  - Search by name
+  - Filter by class
+  - Load more results
+
+- **Responsive Design**
+  - Mobile-friendly layout
+  - Scrollable main content with fixed sidebar
+
+---
+
 ## 📂 Project Structure
 
 src/
