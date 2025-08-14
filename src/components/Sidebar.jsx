@@ -3,17 +3,23 @@ import { Link, useLocation } from "react-router-dom";
 import { BsStars } from "react-icons/bs";
 import { CiSquareRemove } from "react-icons/ci";
 import { IoLogOutOutline } from "react-icons/io5";
+import { AiOutlineHome } from "react-icons/ai";
+import { GiTrophyCup } from "react-icons/gi";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { BsBarChart } from "react-icons/bs";
+import { IoSettingsOutline } from "react-icons/io5";
+
 
 
 export default function Sidebar({ isOpen, setIsOpen }) {
   const location = useLocation();
 
   const menuItems = [
-    { name: "Dashboard", path: "/" },
-    { name: "Leaderboard", path: "/leaderboard" },
-    { name: "Students", path: "/students" },
-    { name: "Analytics", path: "/analytics" },
-    { name: "Settings", path: "/settings" }
+    { name: "Dashboard", path: "/", icon: <AiOutlineHome className="inline-block mr-2" /> },
+    { name: "Leaderboard", path: "/leaderboard", icon: <GiTrophyCup className="inline-block mr-2" /> },
+    { name: "Students", path: "/students", icon: <BsFillPeopleFill className="inline-block mr-2" /> },
+    { name: "Analytics", path: "/analytics", icon: <BsBarChart className="inline-block mr-2" /> },
+    { name: "Settings", path: "/settings", icon: <IoSettingsOutline className="inline-block mr-2" /> },
   ];
 
   return (
@@ -50,6 +56,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
               }`}
               onClick={() => setIsOpen(false)}
             >
+              {item.icon}
               {item.name}
             </Link>
           </li>
