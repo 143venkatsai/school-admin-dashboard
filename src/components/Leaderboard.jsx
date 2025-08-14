@@ -236,8 +236,8 @@ const currentChampion = [
         </p>
       </section>
 
-      <section>
-        <div className="w-full flex flex-col items-center">
+      <section className="mt-6">
+        <div className="w-full flex flex-col items-center shadow-xl rounded-lg mb-8">
           {/* Header */}
           <div className="bg-yellow-50 rounded-t-xl p-4 w-full text-center shadow">
             <h2 className="text-blue-500 font-semibold flex justify-center items-center gap-1">
